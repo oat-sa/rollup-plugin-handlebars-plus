@@ -24,7 +24,7 @@
     "url": "https://github.com/mixmaxhq/rollup-plugin-handlebars-plus/issues"
   },
   "homepage": "https://github.com/mixmaxhq/rollup-plugin-handlebars-plus#readme",
-  "dependencies": {
+  "peerDependencies": {
     "handlebars": "^4.0.5"
   }
 }

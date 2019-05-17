@@ -58,7 +58,9 @@ function handlebars(options) {
         tree = Handlebars.parse(code, options.handlebars.options);
 
       var scanner = new ImportScanner();
-      scanner.accept(tree);
+      try {
+        scanner.accept(tree);
+      } catch(e) {}
 
       var precompileOptions = options.handlebars.options;
       if (precompileOptions.sourceMap && !precompileOptions.srcName) {
